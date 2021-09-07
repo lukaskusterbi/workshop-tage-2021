@@ -8,7 +8,7 @@ data:
 
   # monitoring
   ENABLE_MONITORING: "true"
-  # ENABLE_CUSTOM_METRICS: "true"
+  ENABLE_CUSTOM_METRICS: "true"
 
   # tracing
   ENABLE_TRACING: "false"
