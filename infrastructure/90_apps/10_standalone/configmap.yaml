@@ -18,4 +18,4 @@ data:
   JAEGER_REPORTER_FLUSH_INTERVAL: 1s
   JAEGER_AGENT_PORT: "6831"
   JAEGER_AGENT_HOST: jaeger-agent.tracing.svc.cluster.local
-  # JAEGER_REPORTER_LOG_SPANS: "true"
+  JAEGER_REPORTER_LOG_SPANS: "true"
