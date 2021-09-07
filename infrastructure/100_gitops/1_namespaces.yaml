@@ -13,7 +13,7 @@ metadata:
 spec:
   project: in-cluster
   source:
-    repoURL: https://github.com/bygui86/workshop-tage-2021
+    repoURL: https://github.com/lukaskusterbi/workshop-tage-2021
     targetRevision: main
     path: infrastructure/20_namespaces
   destination:
