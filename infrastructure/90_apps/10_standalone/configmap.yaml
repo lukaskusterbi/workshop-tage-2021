@@ -4,10 +4,10 @@ metadata:
   name: standalone
 data:
   # logging
-  # LOG_ENCODING: json
+  LOG_ENCODING: json
 
   # monitoring
-  ENABLE_MONITORING: "false"
+  ENABLE_MONITORING: "true"
   # ENABLE_CUSTOM_METRICS: "true"
 
   # tracing
