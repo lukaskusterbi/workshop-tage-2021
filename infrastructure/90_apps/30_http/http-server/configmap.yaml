@@ -4,21 +4,21 @@ metadata:
   name: http-server
 data:
   # logging
-  # LOG_ENCODING: json
+  LOG_ENCODING: json
 
   # monitoring
-  ENABLE_MONITORING: "false"
-  # ENABLE_CUSTOM_METRICS: "true"
+  # ENABLE_MONITORING: "false"
+  ENABLE_CUSTOM_METRICS: "true"
 
   # tracing
-  ENABLE_TRACING: "false"
-  # JAEGER_SERVICE_NAME: http-server
-  # JAEGER_SAMPLER_TYPE: const
-  # JAEGER_SAMPLER_PARAM: "1"
-  # JAEGER_REPORTER_FLUSH_INTERVAL: 1s
-  # JAEGER_AGENT_PORT: "6831"
-  # JAEGER_AGENT_HOST: jaeger-agent.tracing.svc.cluster.local
-  # JAEGER_REPORTER_LOG_SPANS: "true"
+  # ENABLE_TRACING: "false"
+  JAEGER_SERVICE_NAME: http-server
+  JAEGER_SAMPLER_TYPE: const
+  JAEGER_SAMPLER_PARAM: "1"
+  JAEGER_REPORTER_FLUSH_INTERVAL: 1s
+  JAEGER_AGENT_PORT: "6831"
+  JAEGER_AGENT_HOST: jaeger-agent.tracing.svc.cluster.local
+  JAEGER_REPORTER_LOG_SPANS: "true"
 
   # database
   DB_HOST: postgresql.apps.svc.cluster.local
