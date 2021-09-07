@@ -70,18 +70,18 @@ spec:
             feature: kafka
             group: clusters
             component: kafka
-        securityContext:
-          runAsNonRoot: true
+        # securityContext:
+        #   runAsNonRoot: true
           # runAsUser: 1001
           # runAsGroup: 1001
           # fsGroup: 1001
-      kafkaContainer:
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-          readOnlyRootFilesystem: false
+      # kafkaContainer:
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      #     readOnlyRootFilesystem: false
     config:
       background.threads: 12
       default.replication.factor: 1
@@ -296,18 +296,18 @@ spec:
             feature: kafka
             group: clusters
             component: zookeeper
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-      zookeeperContainer:
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-          readOnlyRootFilesystem: false
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      # zookeeperContainer:
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      #     readOnlyRootFilesystem: false
     metrics:
       # Inspired by Zookeeper rules
       # https://github.com/prometheus/jmx_exporter/blob/master/example_configs/zookeeper.yaml
@@ -375,19 +375,19 @@ spec:
             feature: kafka
             group: operators
             component: entity-operator
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-          readOnlyRootFilesystem: false
-      topicOperatorContainer:
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-          readOnlyRootFilesystem: false
+        # securityContext:
+        #   runAsNonRoot: true
+        #   # runAsUser: 1001
+        #   # runAsGroup: 1001
+        #   # fsGroup: 1001
+        #   readOnlyRootFilesystem: false
+      # topicOperatorContainer:
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      #     readOnlyRootFilesystem: false
 
   # WORK IN PROGRESS
   kafkaExporter:
@@ -431,15 +431,15 @@ spec:
             feature: kafka
             group: exporters
             component: kafka-exporter
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-      container:
-        securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
-          readOnlyRootFilesystem: false
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      # container:
+      #   securityContext:
+      #     runAsNonRoot: true
+      #     # runAsUser: 1001
+      #     # runAsGroup: 1001
+      #     # fsGroup: 1001
+      #     readOnlyRootFilesystem: false
